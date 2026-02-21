@@ -390,7 +390,7 @@ header.site-header {
 }
 
 .main-header {
-    padding: 21px 10%;
+    padding: 21px 40px;
     top: 0;
     z-index: 999;
     position: relative;
@@ -556,43 +556,6 @@ a.site-logo img {
 .show .hero-image img {
     transform: scale(1.3);
     opacity: 1;
-}
-
-	/* ===== Brand Accent Shape ===== */
-
-.brand-accent{
-  position:absolute;
-  right:-140px;
-  top:80px;
-  width:620px;
-  height:620px;
-  z-index:-1;
-  pointer-events:none;
-}
-
-.brand-accent svg{
-  width:100%;
-  height:100%;
-  display:block;
-}
-
-.accent-shape{
-  fill:#f0480b;
-  opacity:0.95;
-  transform-origin: 100% 0%;
-  transform: scale(0.92) rotate(-6deg);
-}
-
-/* animate once when hero becomes visible */
-.brand-accent{
-  opacity: 0;
-  transform: translateY(18px) scale(0.98);
-  transition: opacity 700ms ease, transform 900ms ease;
-}
-
-.hero-slider.show .brand-accent{
-  opacity: 1;
-  transform: translateY(0) scale(1);
 }
 
 .hero-content {
@@ -993,6 +956,15 @@ form input.site-btn {
     height: 100vh;
     width: 100vw;
     overflow: hidden;
+}
+
+.blob svg {
+    position: absolute;
+    width: 700px;
+    height: 700px;
+    overflow: visible;
+    right: -700px;
+    top: 50%;
 }
 
 .control {
@@ -2715,15 +2687,13 @@ h3.card-title.h5 {
         right: 280px;
     }
 
-	.hero-images {
-		position: absolute;
-		right: 10%;
-		top: 50%;
-		transform: translateY(-45%);
-		width: 520px;
-		height: 380px;
-		z-index: 5;
-	}
+    .hero-images {
+        position: absolute;
+        right: 5%;
+        bottom: 10%;
+        width: 750px;
+        height: 600px;
+    }
 
     .contact-section .site-wrapper>.site-row {
         margin-top: -440px;
@@ -3315,6 +3285,12 @@ h3.card-title.h5 {
         padding-bottom: 78px;
     }
 
+    .blob svg {
+        width: 600px;
+        height: 600px;
+        right: -650px;
+    }
+
     .site-sector .section-heading h2 {
         font-size: 28px;
     }
@@ -3501,7 +3477,6 @@ h3.card-title.h5 {
         position: relative;
         margin-right: 28px;
     }
-	
 
     .col-1 {
         width: 10%;
@@ -3781,13 +3756,19 @@ h3.card-title.h5 {
     }
 
     .hero-images .fist-image,
-	.hero-images .sec-image {
-		bottom: 0;
-		left: 40px; /* increase = more space, decrease = more overlap */
-	}
+    .hero-images .sec-image {
+        margin-right: 21px;
+    }
 
     .hero-images .sec-image {
         margin-right: 0;
+    }
+
+    .blob svg {
+        width: 500px;
+        height: 500px;
+        right: -600px;
+        top: 35%;
     }
 
     .hero-images .fist-image {
