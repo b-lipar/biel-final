@@ -962,9 +962,10 @@ form input.site-btn {
     position: absolute;
     width: 700px;
     height: 700px;
-    overflow: visible;
-    right: -700px;
+    right: -520px;      /* was -700px */
     top: 50%;
+    transform: translateY(-50%) rotate(-8deg);
+    overflow: visible;
 }
 
 .control {
