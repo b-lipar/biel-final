@@ -979,21 +979,6 @@ form input.site-btn {
     overflow: hidden;
 }
 
-.blob {
-    position: absolute;
-    inset: 0;
-    pointer-events: none;
-    z-index: 1; /* behind text (text is z-index:99 in your CSS) */
-}
-
-.blob svg {
-    position: absolute;
-    width: 100px;   /* smaller */
-    height: 400px;
-    top: 0px;     /* move down */
-    right: -20px;  /* move slightly left */
-}
-
 .control {
     width: 100%;
     height: calc(100% - 36px);
