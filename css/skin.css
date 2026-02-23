@@ -992,8 +992,8 @@ form input.site-btn {
     width: 100px;   /* smaller */
     height: 400px;
 
-    top: -40px;     /* move down */
-    right: -150px;  /* move slightly left */
+    top: 20px;     /* move down */
+    right: -20px;  /* move slightly left */
 
     transform: rotate(0deg);  /* remove tilt */
     overflow: visible;
