@@ -397,6 +397,25 @@ header.site-header {
     width: 100%;
 }
 
+/* FIX: keep header row on one line and align logo cleanly */
+header.site-header .main-header .d-flex {
+    flex-wrap: nowrap !important;
+    align-items: center !important;
+}
+
+/* FIX: remove baseline/line-height weirdness on the logo */
+header.site-header a.site-logo {
+    display: flex;
+    align-items: center;
+    line-height: 0;
+}
+
+header.site-header a.site-logo img {
+    display: block;
+    height: 44px;
+    width: auto;
+}
+
 .hdr-right svg {
     width: 40px;
     height: 40px;
@@ -412,7 +431,9 @@ header.site-header {
 }
 
 a.site-logo img {
-    width: 135px;
+    height: 44px;
+    width: auto;
+    display: block;
 }
 
 .main-navigation {
@@ -3702,28 +3723,6 @@ h3.card-title.h5 {
     .main-header {
         padding: 21px 25px;
     }
-	
-	/* --- FIX LOGO ALIGNMENT IN HEADER --- */
-
-/* Make the header row NOT wrap and keep everything vertically centered */
-.main-header > .d-flex {
-  flex-wrap: nowrap;          /* prevents weird vertical shifts */
-  align-items: center;        /* centers logo with nav + button */
-}
-
-/* Make the logo itself behave like a centered flex item */
-a.site-logo {
-  display: flex;
-  align-items: center;
-  line-height: 0;             /* removes extra inline whitespace */
-}
-
-/* Prevent the image from sitting on the text baseline */
-a.site-logo img {
-  display: block;
-  height: 44px;               /* keep a consistent logo height */
-  width: auto;                /* preserve proportions */
-}
 
     .dot-shape {
         top: -10px;
