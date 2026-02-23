@@ -544,7 +544,7 @@ a.site-logo img {
 .hero-images .fist-image {
     top: auto;          /* NEW: stop pinning it to the top */
     bottom: 0;          /* NEW: align it with the other image */
-    right: 60px;        /* NEW: move it left to overlap slightly */
+    right: 0;        /* NEW: move it left to overlap slightly */
     z-index: 2;         /* NEW: keep it in front of the other circle */
     opacity: 0;
     transition: all 1.2s;
