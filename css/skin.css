@@ -3993,7 +3993,6 @@ h3.card-title.h5 {
 /* Only bullet text bold + optional uppercase */
 .accordion__content ul.service-list li strong {
   font-weight: 700;
-  text-transform: uppercase; /* remove this line if you change your mind */
 }
 
 /* Remove bullet for section headers inside funding list */
