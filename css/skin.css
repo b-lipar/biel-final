@@ -390,7 +390,7 @@ header.site-header {
 }
 
 .main-header {
-    padding: 21px 40px;
+    padding: 21px 10%;
     top: 0;
     z-index: 999;
     position: relative;
@@ -412,9 +412,7 @@ header.site-header {
 }
 
 a.site-logo img {
-    height: 44px;
-    width: auto;
-    display: block;
+    width: 135px;
 }
 
 .main-navigation {
