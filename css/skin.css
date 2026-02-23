@@ -988,15 +988,10 @@ form input.site-btn {
 
 .blob svg {
     position: absolute;
-
     width: 100px;   /* smaller */
     height: 400px;
-
-    top: 20px;     /* move down */
+    top: 250px;     /* move down */
     right: -20px;  /* move slightly left */
-
-    transform: rotate(0deg);  /* remove tilt */
-    overflow: visible;
 }
 
 .control {
