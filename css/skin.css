@@ -992,7 +992,7 @@ form input.site-btn {
     width: 950px;   /* smaller */
     height: 950px;
 
-    top: -40px;     /* move down */
+    top: 120px;     /* move down */
     right: -150px;  /* move slightly left */
 
     transform: rotate(0deg);  /* remove tilt */
