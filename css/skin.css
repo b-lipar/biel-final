@@ -989,10 +989,10 @@ form input.site-btn {
 .blob svg {
     position: absolute;
 
-    width: 950px;   /* smaller */
-    height: 950px;
+    width: 100px;   /* smaller */
+    height: 100px;
 
-    top: 120px;     /* move down */
+    top: -40px;     /* move down */
     right: -150px;  /* move slightly left */
 
     transform: rotate(0deg);  /* remove tilt */
