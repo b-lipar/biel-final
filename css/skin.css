@@ -3968,3 +3968,33 @@ h3.card-title.h5 {
     font-weight: 600;
     line-height: 1.4;
 }
+
+
+/* FIX: service accordion lists should look like normal bullet lists */
+#services .accordion__content ul.service-list {
+    margin: 10px 0 20px 0;
+    padding-left: 22px;
+    list-style: disc;
+}
+
+#services .accordion__content ul.service-list li {
+    /* undo global site-section list styling */
+    padding-left: 0 !important;
+    list-style: disc !important;
+
+    /* make them stand out */
+    font-weight: 600;
+    margin-bottom: 8px;
+    line-height: 1.4;
+
+    /* force readable text (in case something else is affecting it) */
+    color: #151515;
+    opacity: 1;
+}
+
+/* remove the global check-icon before each li (only for these lists) */
+#services .accordion__content ul.service-list li::before {
+    display: none !important;
+    content: none !important;
+    background: none !important;
+}
