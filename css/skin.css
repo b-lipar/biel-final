@@ -2476,7 +2476,7 @@ h3.card-title.h5 {
     overflow: hidden;
     will-change: max-height;
     transition: all 0.25s ease-out;
-    color: #f1f1f1;
+    color: #151515;
     opacity: 0;
 }
 
