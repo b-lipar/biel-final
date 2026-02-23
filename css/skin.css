@@ -979,13 +979,23 @@ form input.site-btn {
     overflow: hidden;
 }
 
+.blob {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    z-index: 1; /* behind text (text is z-index:99 in your CSS) */
+}
+
 .blob svg {
     position: absolute;
-    width: 700px;
-    height: 700px;
-    right: -420px;      /* was -700px */
-    top: 50%;
-    transform: translateY(-50%) rotate(-8deg);
+    width: 1200px;
+    height: 1200px;
+
+    /* Anchor to the top-right and let it flow downward */
+    top: -160px;
+    right: -260px;
+
+    transform: rotate(-2deg);
     overflow: visible;
 }
 
