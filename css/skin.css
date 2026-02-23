@@ -990,7 +990,7 @@ form input.site-btn {
     position: absolute;
     width: 100px;   /* smaller */
     height: 400px;
-    top: 250px;     /* move down */
+    top: 0px;     /* move down */
     right: -20px;  /* move slightly left */
 }
 
