@@ -3954,47 +3954,16 @@ h3.card-title.h5 {
   display: block;
 }
 
-
-
-/* Service bullet styling */
-
-.service-list {
+/* Bullet lists inside service accordions */
+.accordion__content ul.service-list {
     padding-left: 20px;
     margin: 10px 0 20px 0;
-}
-
-.service-list li {
-    margin-bottom: 8px;
-    font-weight: 600;
-    line-height: 1.4;
-}
-
-
-/* FIX: service accordion lists should look like normal bullet lists */
-#services .accordion__content ul.service-list {
-    margin: 10px 0 20px 0;
-    padding-left: 22px;
     list-style: disc;
 }
 
-#services .accordion__content ul.service-list li {
-    /* undo global site-section list styling */
-    padding-left: 0 !important;
-    list-style: disc !important;
-
-    /* make them stand out */
+.accordion__content ul.service-list li {
     font-weight: 600;
     margin-bottom: 8px;
     line-height: 1.4;
-
-    /* force readable text (in case something else is affecting it) */
-    color: #151515;
-    opacity: 1;
-}
-
-/* remove the global check-icon before each li (only for these lists) */
-#services .accordion__content ul.service-list li::before {
-    display: none !important;
-    content: none !important;
-    background: none !important;
+    color: #151515; /* ensures readable even if parent changes later */
 }
