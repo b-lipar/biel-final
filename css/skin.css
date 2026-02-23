@@ -3995,3 +3995,19 @@ h3.card-title.h5 {
   font-weight: 700;
   text-transform: uppercase; /* remove this line if you change your mind */
 }
+
+/* Remove bullet for section headers inside funding list */
+.accordion__content ul.service-list li.no-bullet {
+  list-style: none;
+  padding-left: 0;
+}
+
+/* Slight spacing before new section (Europe) */
+.accordion__content ul.service-list li.section-space {
+  margin-top: 18px;
+}
+
+/* Ensure header items don’t inherit uppercase dot logic */
+.accordion__content ul.service-list li.no-bullet strong {
+  text-transform: uppercase;
+}
