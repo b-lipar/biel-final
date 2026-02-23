@@ -390,7 +390,7 @@ header.site-header {
 }
 
 .main-header {
-    padding: 21px 10%;
+    padding: 21px 40px;
     top: 0;
     z-index: 999;
     position: relative;
@@ -3702,6 +3702,28 @@ h3.card-title.h5 {
     .main-header {
         padding: 21px 25px;
     }
+	
+	/* --- FIX LOGO ALIGNMENT IN HEADER --- */
+
+/* Make the header row NOT wrap and keep everything vertically centered */
+.main-header > .d-flex {
+  flex-wrap: nowrap;          /* prevents weird vertical shifts */
+  align-items: center;        /* centers logo with nav + button */
+}
+
+/* Make the logo itself behave like a centered flex item */
+a.site-logo {
+  display: flex;
+  align-items: center;
+  line-height: 0;             /* removes extra inline whitespace */
+}
+
+/* Prevent the image from sitting on the text baseline */
+a.site-logo img {
+  display: block;
+  height: 44px;               /* keep a consistent logo height */
+  width: auto;                /* preserve proportions */
+}
 
     .dot-shape {
         top: -10px;
