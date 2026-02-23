@@ -3967,3 +3967,31 @@ h3.card-title.h5 {
     line-height: 1.4;
     color: #151515; /* ensures readable even if parent changes later */
 }
+
+/* FIX: use normal bullets (not check icons) inside service accordions */
+.accordion__content ul.service-list {
+  list-style: disc;
+  list-style-position: outside;
+  padding-left: 1.2em;   /* controls dot-to-text spacing */
+  margin: 10px 0 20px 0;
+}
+
+/* override global li/reset + section checkmark styling */
+.accordion__content ul.service-list li {
+  list-style: disc;
+  padding-left: 0;       /* remove the 35px padding from .site-section ul li */
+  margin-bottom: 8px;
+  font-weight: 400;      /* so ONLY <strong> is bold */
+}
+
+/* remove the checkmark icon injected by .site-section ul li::before */
+.accordion__content ul.service-list li::before {
+  display: none !important;
+  content: none !important;
+}
+
+/* Only bullet text bold + optional uppercase */
+.accordion__content ul.service-list li strong {
+  font-weight: 700;
+  text-transform: uppercase; /* remove this line if you change your mind */
+}
