@@ -412,7 +412,9 @@ header.site-header {
 }
 
 a.site-logo img {
-    width: 135px;
+    height: 44px;
+    width: auto;
+    display: block;
 }
 
 .main-navigation {
