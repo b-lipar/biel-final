@@ -2540,6 +2540,20 @@ h3.card-title.h5 {
     font-weight: 400;
 }
 
+/* Bullet lists inside service accordions */
+.accordion__content ul.service-list {
+    padding-left: 20px;
+    margin: 10px 0 20px 0;
+    list-style: disc;
+}
+
+.accordion__content ul.service-list li {
+    font-weight: 600;
+    margin-bottom: 8px;
+    line-height: 1.4;
+    color: #151515; /* ensures readable even if parent changes later */
+}
+
 /** footer go top arrow hover animation css **/
 .arrow {
     position: relative;
