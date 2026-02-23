@@ -3971,3 +3971,28 @@ h3.card-title.h5 {
   display: block;
 }
 
+
+/* ============================= */
+/* SIMPLE ORANGE RECTANGLE BLOCK */
+/* ============================= */
+
+#slideshow {
+    position: relative;
+}
+
+.blob-rect {
+    position: absolute;
+
+    /* start under header */
+    top: 90px;
+    right: 0;
+
+    /* rectangle size */
+    width: 35%;
+    height: calc(100% - 90px);
+
+    background: #F9703E;
+
+    z-index: 1;
+    pointer-events: none;
+}
