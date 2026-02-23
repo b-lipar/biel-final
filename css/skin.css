@@ -68,9 +68,7 @@ p {
     line-height: 1.56;
 }
 
-li {
-    list-style: none;
-}
+#services li { list-style: none; }
 
 a,
 a:hover,
