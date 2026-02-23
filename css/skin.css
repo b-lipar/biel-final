@@ -3940,3 +3940,17 @@ h3.card-title.h5 {
   display: block;
 }
 
+
+
+/* Service bullet styling */
+
+.service-list {
+    padding-left: 20px;
+    margin: 10px 0 20px 0;
+}
+
+.service-list li {
+    margin-bottom: 8px;
+    font-weight: 600;
+    line-height: 1.4;
+}
