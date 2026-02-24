@@ -1576,6 +1576,61 @@ aside.sticky-nav li a:hover {
     font-weight: 400;
 }
 
+/* --- Triple-triple highlight (About section) --- */
+.triple-word{
+    font-family: Caveat;           /* same as "About" */
+    color: #F04405;                /* same orange */
+    font-size: 1.15em;             /* slightly larger than surrounding text */
+    font-weight: 400;
+    position: relative;
+    display: inline-block;
+    padding: 0 6px 6px;
+    line-height: 1;
+}
+
+/* hand-drawn underline */
+.triple-word::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0px;
+    height: 10px;
+    width: 100%;
+    background: rgba(240, 68, 5, 0.22);
+    border-radius: 999px;
+
+    /* “imperfect” underline shape */
+    transform: scaleX(0);
+    transform-origin: left;
+    filter: blur(0.2px);
+}
+
+/* Animate underline when About section scrolls in */
+#about-us.scrolled .triple-word::after{
+    animation: underline-draw 900ms ease-out forwards;
+}
+
+@keyframes underline-draw{
+    0%   { transform: scaleX(0); }
+    100% { transform: scaleX(1); }
+}
+
+.site-stats{
+    gap: 42px;              /* nicer spacing than % */
+    margin-top: 28px;
+}
+
+.site-stats p{
+    margin: 0;              /* remove default p bottom spacing */
+    min-width: 140px;
+}
+
+.site-stats p span.stat-date{
+    font-size: 38px;        /* slightly smaller = more premium */
+    font-weight: 500;
+    line-height: 1.1;
+}
+
 /** swiffy slider minified css starts here **/
 .swiffy-slider {
     position: relative;
