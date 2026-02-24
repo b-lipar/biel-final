@@ -1576,43 +1576,59 @@ aside.sticky-nav li a:hover {
     font-weight: 400;
 }
 
-/* --- Triple-triple highlight (About section) --- */
+/* --- Animated triple-triple --- */
+
 .triple-word{
-    font-family: Caveat;           /* same as "About" */
-    color: #F04405;                /* same orange */
-    font-size: 1.15em;             /* slightly larger than surrounding text */
-    font-weight: 400;
+    font-family: Caveat;
+    color: #F04405;
     position: relative;
     display: inline-block;
-    padding: 0 6px 6px;
-    line-height: 1;
+    padding-bottom: 12px;
+
+    opacity: 0;
+    transform: translateY(10px);
 }
 
-/* hand-drawn underline */
-.triple-word::after{
-    content: "";
+/* animate word when section scrolls in */
+#about-us.scrolled .triple-word{
+    animation: revealTriple 700ms ease-out forwards;
+}
+
+@keyframes revealTriple{
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* SVG positioning */
+.triple-word .swoosh{
     position: absolute;
     left: 0;
-    bottom: 0px;
-    height: 10px;
+    bottom: 0;
     width: 100%;
-    background: rgba(240, 68, 5, 0.22);
-    border-radius: 999px;
-
-    /* “imperfect” underline shape */
-    transform: scaleX(0);
-    transform-origin: left;
-    filter: blur(0.2px);
+    height: 18px;
 }
 
-/* Animate underline when About section scrolls in */
-#about-us.scrolled .triple-word::after{
-    animation: underline-draw 900ms ease-out forwards;
+/* Swoosh path */
+.triple-word .swoosh path{
+    fill: none;
+    stroke: #F04405;
+    stroke-width: 3;
+    stroke-linecap: round;
+    stroke-dasharray: 300;
+    stroke-dashoffset: 300;
 }
 
-@keyframes underline-draw{
-    0%   { transform: scaleX(0); }
-    100% { transform: scaleX(1); }
+/* animate swoosh slightly after word */
+#about-us.scrolled .triple-word .swoosh path{
+    animation: drawSwoosh 900ms ease-out 200ms forwards;
+}
+
+@keyframes drawSwoosh{
+    to{
+        stroke-dashoffset: 0;
+    }
 }
 
 .site-stats{
