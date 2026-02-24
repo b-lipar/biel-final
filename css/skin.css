@@ -1586,11 +1586,11 @@ aside.sticky-nav li a:hover {
     padding-bottom: 12px;
 
     opacity: 0;
-    transform: translateY(10px);
+    transform: translateY(6px);
 }
 
 /* animate word when section scrolls in */
-#about-us.scrolled .triple-word{
+.about-section.site-scroll.scrolled .triple-word{
     animation: revealTriple 700ms ease-out forwards;
 }
 
@@ -1614,14 +1614,14 @@ aside.sticky-nav li a:hover {
 .triple-word .swoosh path{
     fill: none;
     stroke: #F04405;
-    stroke-width: 3;
+    stroke-width: 2;
     stroke-linecap: round;
     stroke-dasharray: 300;
     stroke-dashoffset: 300;
 }
 
 /* animate swoosh slightly after word */
-#about-us.scrolled .triple-word .swoosh path{
+.about-section.site-scroll.scrolled .triple-word .swoosh path{
     animation: drawSwoosh 900ms ease-out 200ms forwards;
 }
 
