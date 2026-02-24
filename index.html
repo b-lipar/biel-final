@@ -235,12 +235,30 @@
                     <div class="site-content">
                         <p class="sub-heading">About</p>
                         <h2>Alignment before execution</h2>
-                        <div class="site-stats">
-                            <p>Working Method <span class="stat-date">Flexible</span></p>
-                            <p>Regional Expertise <span class="stat-date">DACH</span></p>
-                        </div>
-                    </div>
-                </div>
+						<div class="site-stats">
+
+						  <p>
+							Working Method 
+							<span class="stat-date counter" data-target="3">0</span> weeks
+							<br>
+							<small>Initial Positioning Phase</small>
+						  </p>
+
+						  <p>
+							Collaboration Scope 
+							<span class="stat-date counter" data-target="8">0</span> profiles
+							<br>
+							<small>Average Partner Shortlist</small>
+						  </p>
+
+						  <p>
+							Project Environment 
+							<span class="stat-date">DACH + EU</span>
+							<br>
+							<small>10+ funding instruments analysed</small>
+						  </p>
+
+						</div>
                 <div class="site-col col-6">
                     <div class="site-content">
 						<p class="text-justify">
@@ -671,3 +689,45 @@
 </body>
 
 </html>
+
+<script>
+  // Count-up animation for .counter elements
+  document.addEventListener("DOMContentLoaded", () => {
+    const counters = document.querySelectorAll(".counter");
+    if (!counters.length) return;
+
+    const animate = (el) => {
+      const target = parseInt(el.getAttribute("data-target"), 10);
+      if (isNaN(target)) return;
+
+      const duration = 900; // ms
+      const start = 0;
+      const startTime = performance.now();
+
+      const step = (now) => {
+        const progress = Math.min((now - startTime) / duration, 1);
+        const value = Math.floor(start + (target - start) * progress);
+        el.textContent = value;
+        if (progress < 1) requestAnimationFrame(step);
+      };
+
+      requestAnimationFrame(step);
+    };
+
+    // Run when the about section becomes visible
+    const aboutSection = document.querySelector("#about-us");
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+        counters.forEach((c) => {
+          if (c.dataset.done) return;
+          c.dataset.done = "1";
+          animate(c);
+        });
+      });
+    }, { threshold: 0.35 });
+
+    if (aboutSection) observer.observe(aboutSection);
+    else counters.forEach(animate); // fallback
+  });
+</script>
