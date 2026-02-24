@@ -572,7 +572,7 @@ a.site-logo img {
     transition: all 1.2s;
     transition-delay: 1.2s;
     bottom: 0;
-    left: 120px;
+    right: 120px;
     opacity: 0;
 	z-index: 1;
 }
@@ -580,7 +580,7 @@ a.site-logo img {
 .hero-images .third-image {
     position: absolute;
     bottom: 0;
-    right: 120px;   /* adjust overlap here */
+    right: 240px;   /* adjust overlap here */
     z-index: 1;
     opacity: 0;
     transition: all 1.2s;
