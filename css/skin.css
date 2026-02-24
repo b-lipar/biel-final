@@ -553,7 +553,8 @@ a.site-logo img {
 }
 
 .show .hero-images .sec-image,
-.show .hero-images .fist-image {
+.show .hero-images .fist-image 
+.show .hero-images .third-image {
     opacity: 1;
     transform: scale(1);
 }
@@ -574,6 +575,17 @@ a.site-logo img {
     left: 120px;
     opacity: 0;
 	z-index: 1;
+}
+
+.hero-images .third-image {
+    position: absolute;
+    bottom: 0;
+    right: 120px;   /* adjust overlap here */
+    z-index: 1;
+    opacity: 0;
+    transition: all 1.2s;
+    transition-delay: 1.4s;
+    transform: scale(0.9);
 }
 
 .show .hero-image img {
