@@ -4081,3 +4081,43 @@ h3.card-title.h5 {
 .site-sector .card-body {
     text-align: center;
 }
+
+/* --- Triple-triple handwritten swoosh --- */
+
+.triple-word{
+    font-family: Caveat;
+    color: #F04405;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 12px;
+}
+
+/* SVG positioning */
+.triple-word .swoosh{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 18px;
+}
+
+/* Path styling */
+.triple-word .swoosh path{
+    fill: none;
+    stroke: #F04405;
+    stroke-width: 2.5;
+    stroke-linecap: round;
+    stroke-dasharray: 300;
+    stroke-dashoffset: 300;
+}
+
+/* Animate when section scrolls in */
+#about-us.scrolled .triple-word .swoosh path{
+    animation: drawSwoosh 900ms ease-out forwards;
+}
+
+@keyframes drawSwoosh{
+    to{
+        stroke-dashoffset: 0;
+    }
+}
