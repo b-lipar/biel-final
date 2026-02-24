@@ -545,7 +545,7 @@ a.site-logo img {
     position: absolute;          /* NEW: stop pinning it to the top */
     bottom: 0;          /* NEW: align it with the other image */
     right: 0;        /* NEW: move it left to overlap slightly */
-    z-index: 2;         /* NEW: keep it in front of the other circle */
+    z-index: 3;         /* NEW: keep it in front of the other circle */
     opacity: 0;
     transition: all 1.2s;
     transition-delay: 0.8s;
@@ -572,15 +572,15 @@ a.site-logo img {
     transition: all 1.2s;
     transition-delay: 1.2s;
     bottom: 0;
-    right: 120px;
+    right: 180px;
     opacity: 0;
-	z-index: 1;
+	z-index: 2;
 }
 
 .hero-images .third-image {
     position: absolute;
     bottom: 0;
-    right: 240px;   /* adjust overlap here */
+    right: 360px;   /* adjust overlap here */
     z-index: 1;
     opacity: 0;
     transition: all 1.2s;
