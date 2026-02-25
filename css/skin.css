@@ -4125,3 +4125,133 @@ h3.card-title.h5 {
 .footer-contact-link:hover{
   color: #F04405; /* your brand orange */
 }
+
+/* =========================================================
+   Mobile-only layout fixes (phones)
+   - Keeps desktop/tablet styling unchanged
+   ========================================================= */
+
+@media (max-width: 600px) {
+  /* Prevent horizontal scrolling from absolute-positioned hero elements */
+  html, body { overflow-x: hidden; }
+
+  /* HERO: let content flow naturally on phones */
+  #slideshow {
+    height: auto;          /* avoid “trapped” content on short viewports */
+    min-height: 100vh;
+    width: 100%;
+  }
+
+  .hero-content {
+    position: relative;
+    top: auto;
+    left: auto;
+    transform: none;
+    width: auto;
+    max-width: 100%;
+    padding: 110px 16px 0; /* room for the absolute header */
+  }
+
+  .hero-content h2 {
+    line-height: 1.15;
+    word-break: normal;
+    overflow-wrap: anywhere;
+  }
+
+  /* HERO IMAGES: turn 3 circles into a swipeable row */
+  .hero-images {
+    position: relative;
+    right: auto;
+    bottom: auto;
+    width: 100%;
+    height: auto;
+    display: flex;
+    gap: 14px;
+    padding: 18px 16px 10px;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x mandatory;
+  }
+
+  .hero-images img,
+  .hero-images .third-image {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    flex: 0 0 auto;
+    scroll-snap-align: start;
+  }
+
+  .hero-images .fist-image,
+  .hero-images .sec-image,
+  .hero-images .third-image {
+    position: relative !important;
+    right: auto !important;
+    bottom: auto !important;
+    margin: 0 !important;
+    opacity: 1;            /* keep circles visible even before .show */
+    transform: none;
+  }
+
+  /* STICKY NAV: compact horizontal bar */
+  aside.sticky-nav {
+    position: relative;
+    left: 0;
+    top: auto;
+    bottom: auto;
+    transform: none;
+    width: 100%;
+    margin: 4px 0 0;
+    box-shadow: none;
+    opacity: 1;
+  }
+
+  aside.sticky-nav ul {
+    display: flex;
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  aside.sticky-nav li {
+    width: auto;
+    flex: 0 0 auto;
+    border-bottom: none;
+    border-right: 1px solid #E8E8E8;
+  }
+
+  aside.sticky-nav li:last-child {
+    border-right: none;
+  }
+
+  aside.sticky-nav li a {
+    padding: 10px 12px;
+    font-size: 12px;
+    white-space: nowrap;
+  }
+
+  aside.sticky-nav li img {
+    margin: 0 auto 6px;
+  }
+
+  /* ABOUT: center portrait and avoid awkward cropping */
+  #about-us .about-portrait {
+    width: 220px;
+    margin: 0 auto 14px;
+    padding: 0;
+  }
+
+  #about-us .about-portrait img {
+    -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 80%, rgba(0,0,0,0) 100%);
+    mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 80%, rgba(0,0,0,0) 100%);
+  }
+}
+
+@media (max-width: 380px) {
+  /* Slightly smaller circles for very small phones */
+  .hero-images img,
+  .hero-images .third-image {
+    width: 190px;
+    height: 190px;
+  }
+}
