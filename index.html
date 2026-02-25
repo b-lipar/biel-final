@@ -690,6 +690,50 @@
             </div>
     </footer>
 
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const counters = document.querySelectorAll(".counter");
+    if (!counters.length) return;
+
+    const animate = (el) => {
+      const target = parseInt(el.getAttribute("data-target"), 10);
+      if (isNaN(target)) return;
+
+      const duration = 900;
+      const startTime = performance.now();
+
+      const step = (now) => {
+        const progress = Math.min((now - startTime) / duration, 1);
+        el.textContent = Math.floor(target * progress);
+        if (progress < 1) requestAnimationFrame(step);
+      };
+
+      requestAnimationFrame(step);
+    };
+
+    const aboutSection = document.querySelector("#about-us");
+
+    // If we can observe the section, run when it comes into view; otherwise run immediately
+    if (aboutSection && "IntersectionObserver" in window) {
+      const observer = new IntersectionObserver((entries, obs) => {
+        if (!entries.some(e => e.isIntersecting)) return;
+
+        counters.forEach((c) => {
+          if (c.dataset.done) return;
+          c.dataset.done = "1";
+          animate(c);
+        });
+
+        obs.disconnect(); // run once
+      }, { threshold: 0.35 });
+
+      observer.observe(aboutSection);
+    } else {
+      counters.forEach(animate);
+    }
+  });
+</script>
+
 <script src="js/script.js"></script>
 </body>
 </html>
