@@ -1590,8 +1590,8 @@ aside.sticky-nav li a:hover {
 }
 
 /* animate word when section scrolls in */
-#about-us.site-scroll.scrolled .triple-word{
-    animation: revealTriple 700ms ease-out forwards;
+#about-us.scrolled .triple-word{
+  animation: revealTriple 700ms ease-out forwards;
 }
 
 @keyframes revealTriple{
@@ -1621,8 +1621,8 @@ aside.sticky-nav li a:hover {
 }
 
 /* animate swoosh slightly after word */
-#about-us.site-scroll.scrolled .triple-word .swoosh path{
-    animation: drawSwoosh 900ms ease-out 200ms forwards;
+#about-us.scrolled .triple-word .swoosh path{
+  animation: drawSwoosh 900ms ease-out 200ms forwards;
 }
 
 @keyframes drawSwoosh{
