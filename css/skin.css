@@ -2605,7 +2605,7 @@ h3.card-title.h5 {
 #about-us .about-portrait{
   position: absolute;
   top: 0px;
-  left: 200px;              /* moves image more right */
+  left: 180px;              /* moves image more right */
   width: 300px;             /* bigger */
   z-index: 3;
   padding: 20px 20px 0 20px; 
