@@ -4149,7 +4149,7 @@ h3.card-title.h5 {
     transform: none;
     width: auto;
     max-width: 100%;
-    padding: 78px 16px 0;  /* enough room for the absolute header (less empty space) */
+    padding: 54px 16px 0;  /* less empty space above hero on phones */
   }
 
   .hero-content h2 {
@@ -4158,7 +4158,7 @@ h3.card-title.h5 {
     overflow-wrap: anywhere;
   }
 
-  /* HERO IMAGES: turn 3 circles into a swipeable row */
+  /* HERO IMAGES: show TWO circles that slightly overlap so both fit on small phones */
   .hero-images {
     position: relative;
     right: auto;
@@ -4166,20 +4166,19 @@ h3.card-title.h5 {
     width: 100%;
     height: auto;
     display: flex;
-    gap: 12px;
-    padding: 10px 16px 8px;
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-    scroll-snap-type: x mandatory;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+    padding: 10px 0 8px;
+    overflow: visible;
   }
 
   .hero-images img,
   .hero-images .third-image {
-    width: 220px;
-    height: 220px;
+    width: clamp(170px, 48vw, 210px);
+    height: clamp(170px, 48vw, 210px);
     border-radius: 50%;
     flex: 0 0 auto;
-    scroll-snap-align: start;
   }
 
   .hero-images .fist-image,
@@ -4191,6 +4190,11 @@ h3.card-title.h5 {
     margin: 0 !important;
     opacity: 1;            /* keep circles visible even before .show */
     transform: none;
+  }
+
+  /* overlap the 2nd circle slightly so both remain fully visible */
+  .hero-images .sec-image {
+    margin-left: -44px !important;
   }
 
   /* Keep max TWO circles on phones (avoid clutter) */
@@ -4214,6 +4218,8 @@ h3.card-title.h5 {
     width: 100%;
     justify-content: space-between;
     overflow-x: hidden;
+    padding: 0;
+    margin: 0;
   }
 
   aside.sticky-nav li {
@@ -4221,6 +4227,7 @@ h3.card-title.h5 {
     flex: 1 1 0;
     border-bottom: none;
     border-right: 1px solid #E8E8E8;
+    margin: 0;
   }
 
   aside.sticky-nav li:last-child {
@@ -4233,6 +4240,10 @@ h3.card-title.h5 {
     white-space: nowrap;
     text-align: center;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 
   aside.sticky-nav li img {
@@ -4242,8 +4253,9 @@ h3.card-title.h5 {
   /* ABOUT: center portrait and avoid awkward cropping */
   #about-us .about-portrait {
     width: 220px;
-    margin: 0 auto 14px;
+    margin: 18px 0 14px auto; /* lower + align right */
     padding: 0;
+    transform: translateX(10px);
   }
 
   #about-us .about-portrait img {
@@ -4257,6 +4269,7 @@ h3.card-title.h5 {
     grid-template-columns: repeat(auto-fit, minmax(95px, 1fr));
     gap: 12px;
     margin-top: 18px;
+    margin-bottom: 26px; /* more space before paragraph text */
   }
 
   #about-us .site-stats p {
@@ -4277,7 +4290,11 @@ h3.card-title.h5 {
   /* Slightly smaller circles for very small phones */
   .hero-images img,
   .hero-images .third-image {
-    width: 190px;
-    height: 190px;
+    width: 176px;
+    height: 176px;
+  }
+
+  .hero-images .sec-image {
+    margin-left: -38px !important;
   }
 }
