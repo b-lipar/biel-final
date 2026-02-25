@@ -4113,3 +4113,13 @@ h3.card-title.h5 {
 .site-sector .card-body {
     text-align: center;
 }
+
+.footer-phone a{
+  font-size: 18px;
+  white-space: nowrap;
+  text-decoration: none;
+}
+
+.footer-phone a:hover{
+  color: #F04405;
+}
