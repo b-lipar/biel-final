@@ -2604,8 +2604,8 @@ h3.card-title.h5 {
 /* White card container */
 #about-us .about-portrait{
   position: absolute;
-  top: -40px;
-  left: 120px;              /* moves image more right */
+  top: 0px;
+  left: 200px;              /* moves image more right */
   width: 300px;             /* bigger */
   z-index: 3;
   padding: 20px 20px 0 20px; 
