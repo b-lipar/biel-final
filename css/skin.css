@@ -4138,7 +4138,7 @@ h3.card-title.h5 {
   /* HERO: let content flow naturally on phones */
   #slideshow {
     height: auto;          /* avoid “trapped” content on short viewports */
-    min-height: 100vh;
+    min-height: auto;
     width: 100%;
   }
 
@@ -4149,7 +4149,7 @@ h3.card-title.h5 {
     transform: none;
     width: auto;
     max-width: 100%;
-    padding: 110px 16px 0; /* room for the absolute header */
+    padding: 78px 16px 0;  /* enough room for the absolute header (less empty space) */
   }
 
   .hero-content h2 {
@@ -4166,8 +4166,8 @@ h3.card-title.h5 {
     width: 100%;
     height: auto;
     display: flex;
-    gap: 14px;
-    padding: 18px 16px 10px;
+    gap: 12px;
+    padding: 10px 16px 8px;
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
     scroll-snap-type: x mandatory;
@@ -4193,6 +4193,9 @@ h3.card-title.h5 {
     transform: none;
   }
 
+  /* Keep max TWO circles on phones (avoid clutter) */
+  .hero-images .third-image { display: none !important; }
+
   /* STICKY NAV: compact horizontal bar */
   aside.sticky-nav {
     position: relative;
@@ -4209,13 +4212,13 @@ h3.card-title.h5 {
   aside.sticky-nav ul {
     display: flex;
     width: 100%;
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
+    justify-content: space-between;
+    overflow-x: hidden;
   }
 
   aside.sticky-nav li {
     width: auto;
-    flex: 0 0 auto;
+    flex: 1 1 0;
     border-bottom: none;
     border-right: 1px solid #E8E8E8;
   }
@@ -4225,9 +4228,11 @@ h3.card-title.h5 {
   }
 
   aside.sticky-nav li a {
-    padding: 10px 12px;
+    padding: 10px 6px;
     font-size: 12px;
     white-space: nowrap;
+    text-align: center;
+    width: 100%;
   }
 
   aside.sticky-nav li img {
@@ -4244,6 +4249,27 @@ h3.card-title.h5 {
   #about-us .about-portrait img {
     -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 80%, rgba(0,0,0,0) 100%);
     mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 80%, rgba(0,0,0,0) 100%);
+  }
+
+  /* ABOUT: make all three counters fit inside on mobile */
+  #about-us .site-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(95px, 1fr));
+    gap: 12px;
+    margin-top: 18px;
+  }
+
+  #about-us .site-stats p {
+    min-width: 0;
+    margin: 0;
+    text-align: center;
+    font-size: 13px;
+    line-height: 1.2;
+  }
+
+  #about-us .site-stats p span.stat-date {
+    font-size: 30px;
+    line-height: 1.05;
   }
 }
 
