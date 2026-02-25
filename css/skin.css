@@ -4114,12 +4114,14 @@ h3.card-title.h5 {
     text-align: center;
 }
 
-.footer-phone a{
-  font-size: 18px;
-  white-space: nowrap;
+.footer-contact-link{
   text-decoration: none;
+  color: inherit;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
 }
 
-.footer-phone a:hover{
-  color: #F04405;
+.footer-contact-link:hover{
+  color: #F04405; /* your brand orange */
 }
