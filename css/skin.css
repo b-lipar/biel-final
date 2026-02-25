@@ -2594,19 +2594,24 @@ h3.card-title.h5 {
     font-weight: 400;
 }
 
-/* About portrait cutout */
+/* ===== About Portrait (refined layout) ===== */
+
 #about-us .site-col.col-6:first-child .site-content{
   position: relative;
-  padding-top: 90px;
+  padding-top: 260px; /* pushes About + heading below image */
 }
 
+/* White card container */
 #about-us .about-portrait{
   position: absolute;
-  left: 80px;
-  top: -50px;
-  width: 200px;
+  top: -40px;
+  left: 120px;              /* moves image more right */
+  width: 300px;             /* bigger */
   z-index: 3;
-  pointer-events: none;
+  background: #ffffff;      /* white around image */
+  padding: 20px 20px 0 20px; 
+  border-radius: 12px;      /* subtle rounding */
+  box-shadow: 0 25px 60px rgba(0,0,0,0.08);
 }
 
 #about-us .about-portrait img{
