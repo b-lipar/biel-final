@@ -2594,6 +2594,41 @@ h3.card-title.h5 {
     font-weight: 400;
 }
 
+/* About portrait cutout */
+#about-us .site-col.col-6:first-child .site-content{
+  position: relative;
+  padding-top: 170px;
+}
+
+#about-us .about-portrait{
+  position: absolute;
+  left: -10px;
+  top: -95px;
+  width: 280px;
+  z-index: 3;
+  pointer-events: none;
+}
+
+#about-us .about-portrait img{
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+@media (max-width: 900px){
+  #about-us .site-col.col-6:first-child .site-content{
+    padding-top: 0;
+  }
+
+  #about-us .about-portrait{
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 240px;
+    margin-bottom: 18px;
+  }
+}
+
 /* Bullet lists inside service accordions */
 .accordion__content ul.service-list {
     padding-left: 20px;
