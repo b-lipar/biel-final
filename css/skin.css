@@ -1576,32 +1576,17 @@ aside.sticky-nav li a:hover {
     font-weight: 400;
 }
 
-/* --- Animated triple-triple --- */
-
+/* --- triple-triple (static) --- */
 .triple-word{
     font-family: Caveat;
     color: #F04405;
     position: relative;
     display: inline-block;
     padding-bottom: 12px;
-
-    opacity: 0;
-    transform: translateY(6px);
+    margin-right: 0.4em; /* spacing before "initial" */
 }
 
-/* animate word when section scrolls in */
-#about-us.scrolled .triple-word{
-  animation: revealTriple 700ms ease-out forwards;
-}
-
-@keyframes revealTriple{
-    to{
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-/* SVG positioning */
+/* SVG positioning (keep underline as-is, no animation) */
 .triple-word .swoosh{
     position: absolute;
     left: 0;
@@ -1610,25 +1595,11 @@ aside.sticky-nav li a:hover {
     height: 18px;
 }
 
-/* Swoosh path */
 .triple-word .swoosh path{
     fill: none;
     stroke: #F04405;
     stroke-width: 2;
     stroke-linecap: round;
-    stroke-dasharray: 300;
-    stroke-dashoffset: 300;
-}
-
-/* animate swoosh slightly after word */
-#about-us.scrolled .triple-word .swoosh path{
-  animation: drawSwoosh 900ms ease-out 200ms forwards;
-}
-
-@keyframes drawSwoosh{
-    to{
-        stroke-dashoffset: 0;
-    }
 }
 
 .site-stats{
