@@ -400,27 +400,27 @@ header.site-header {
 /* Language toggle (center-top) */
 .lang-switch{
     position: absolute;
-    left: 50%;
-    top: 12px;
-    transform: translateX(-50%);
+    left: 250px;      /* distance from left edge */
+    top: 30px;       /* lower it slightly */
+    width: 40%;      /* how far toward the middle it stretches */
+    text-align: center;
     z-index: 10000;
 }
 
 .lang-btn{
     display: inline-block;
-    padding: 10px 16px;
+    padding: 8px 14px;
     font-size: 14px;
-    font-weight: 700;
-    letter-spacing: 0.5px;
-    border: 2px solid #0F2E5F;
-    color: #0F2E5F;
-    background: #fff;
-    line-height: 1;
+    font-weight: 500;
+    text-transform: none;   /* removes uppercase */
+    letter-spacing: normal; /* removes spaced caps look */
+    border: none;
+    background: transparent;
+    color: #e44008;         /* your new color */
 }
 
 .lang-btn:hover{
-    background: #0F2E5F;
-    color: #fff;
+    text-decoration: underline;
 }
 
 /* FIX: keep header row on one line and align logo cleanly */
