@@ -1326,6 +1326,34 @@ section.site-section.cta-section {
     transition: all 0.4s
 }
 
+/* --- Service card hover subtitle --- */
+
+.caption {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 100%;
+    padding: 20px;
+}
+
+.caption-title {
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.caption-sub {
+    font-size: 14px;
+    font-weight: 400;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: all 0.3s ease;
+}
+
+.card:hover .caption-sub {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 aside.sticky-nav {
     position: absolute;
     z-index: 999;
