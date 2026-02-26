@@ -397,6 +397,32 @@ header.site-header {
     width: 100%;
 }
 
+/* Language toggle (center-top) */
+.lang-switch{
+    position: absolute;
+    left: 50%;
+    top: 12px;
+    transform: translateX(-50%);
+    z-index: 10000;
+}
+
+.lang-btn{
+    display: inline-block;
+    padding: 10px 16px;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    border: 2px solid #0F2E5F;
+    color: #0F2E5F;
+    background: #fff;
+    line-height: 1;
+}
+
+.lang-btn:hover{
+    background: #0F2E5F;
+    color: #fff;
+}
+
 /* FIX: keep header row on one line and align logo cleanly */
 header.site-header .main-header .d-flex {
     flex-wrap: nowrap !important;
