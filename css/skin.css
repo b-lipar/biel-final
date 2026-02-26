@@ -4326,3 +4326,36 @@ h3.card-title.h5 {
     margin-left: -38px !important;
   }
 }
+
+
+/* Language switch button */
+.lang-switch{
+    display:flex;
+    align-items:center;
+    margin: 0 16px;
+}
+.lang-btn{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    height: 34px;
+    padding: 0 12px;
+    border-radius: 999px;
+    border: 1px solid rgba(255,255,255,0.25);
+    background: rgba(255,255,255,0.06);
+    color: #fff;
+    font-family: inherit;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+.lang-btn:hover{
+    background: rgba(255,255,255,0.14);
+    border-color: rgba(255,255,255,0.35);
+}
+@media (max-width: 991px){
+    .lang-switch{ margin: 0 10px; }
+    .lang-btn{ height: 32px; padding: 0 10px; font-size: 12px; }
+}
