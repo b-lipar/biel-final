@@ -400,7 +400,7 @@ header.site-header {
 /* Language toggle (center-top) */
 .lang-switch{
     position: absolute;
-    left: 150px;      /* distance from left edge */
+    left: 110px;      /* distance from left edge */
     top: 20px;       /* lower it slightly */
     width: 40%;      /* how far toward the middle it stretches */
     text-align: center;
@@ -410,7 +410,7 @@ header.site-header {
 .lang-btn{
     display: inline-block;
     padding: 8px 14px;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 500;
     text-transform: none;   /* removes uppercase */
     letter-spacing: normal; /* removes spaced caps look */
