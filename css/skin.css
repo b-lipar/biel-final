@@ -400,7 +400,7 @@ header.site-header {
 /* Language toggle (center-top) */
 .lang-switch{
     position: absolute;
-    left: 85px;      /* distance from left edge */
+    left: 70px;      /* distance from left edge */
     top: 20px;       /* lower it slightly */
     width: 40%;      /* how far toward the middle it stretches */
     text-align: center;
