@@ -400,8 +400,8 @@ header.site-header {
 /* Language toggle (center-top) */
 .lang-switch{
     position: absolute;
-    left: 70px;      /* distance from left edge */
-    top: 20px;       /* lower it slightly */
+    left: 65px;      /* distance from left edge */
+    top: 17px;       /* lower it slightly */
     width: 40%;      /* how far toward the middle it stretches */
     text-align: center;
     z-index: 10000;
@@ -416,7 +416,7 @@ header.site-header {
     letter-spacing: normal; /* removes spaced caps look */
     border: none;
     background: transparent;
-    color: #e44008;         /* your new color */
+    color: #102e5f;         /* your new color */
 }
 
 .lang-btn:hover{
