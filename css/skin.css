@@ -4306,10 +4306,22 @@ h3.card-title.h5 {
 
   /* ABOUT: center portrait and avoid awkward cropping */
   #about-us .about-portrait {
-    width: 220px;
-    margin: 18px 0 14px auto; /* lower + align right */
+    width: 180px;
+    margin: 12px 0 10px auto;
     padding: 0;
-    transform: translateX(10px);
+    transform: translateX(-6px);
+  }
+  
+    .lang-switch{
+    left: 40px;
+    top: 34px;
+    width: auto;
+    text-align: left;
+  }
+
+  .lang-btn{
+    font-size: 20px;
+    padding: 6px 10px;
   }
 
   #about-us .about-portrait img {
