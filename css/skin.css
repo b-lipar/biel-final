@@ -4303,18 +4303,10 @@ h3.card-title.h5 {
   aside.sticky-nav li img {
     margin: 0 auto 6px;
   }
-
-  /* ABOUT: center portrait and avoid awkward cropping */
-  #about-us .about-portrait {
-    width: 180px;
-    margin: 12px 0 10px auto;
-    padding: 0;
-    transform: translateX(-6px);
-  }
   
-    .lang-switch{
-    left: 40px;
-    top: 34px;
+      .lang-switch{
+    left: 20px;
+    top: 100px;
     width: auto;
     text-align: left;
   }
@@ -4323,6 +4315,15 @@ h3.card-title.h5 {
     font-size: 20px;
     padding: 6px 10px;
   }
+
+  /* ABOUT: center portrait and avoid awkward cropping */
+  #about-us .about-portrait {
+    width: 180px;
+    margin: 50px 0 10px auto;
+    padding: 0;
+    transform: translateX(-6px);
+  }
+  
 
   #about-us .about-portrait img {
     -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 80%, rgba(0,0,0,0) 100%);
