@@ -2652,7 +2652,7 @@ h3.card-title.h5 {
 
 #about-us .site-col.col-6:first-child .site-content{
   position: relative;
-  padding-top: 260px; /* pushes About + heading below image */
+  padding-top: 100px; /* pushes About + heading below image */
 }
 
 /* White card container */
@@ -4305,7 +4305,7 @@ h3.card-title.h5 {
   }
   
       .lang-switch{
-    left: 185px;
+    left: 195px;
     top: 15px;
     width: auto;
     text-align: left;
@@ -4319,7 +4319,7 @@ h3.card-title.h5 {
   /* ABOUT: center portrait and avoid awkward cropping */
   #about-us .about-portrait {
     width: 180px;
-    margin: 150px 0 10px auto;
+    margin: 180px 0 6px auto;
     padding: 0;
     transform: translateX(-6px);
   }
