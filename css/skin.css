@@ -4331,10 +4331,14 @@ h3.card-title.h5 {
 
 	#about-us .about-portrait {
 	  width: 180px;
-	  margin: 8px 0 8px auto;
+	  margin: 4px 0 -8px auto;
 	  padding: 0;
 	  transform: translateX(-6px);
 	}
+	
+	#about-us .section-title {
+  margin-top: 0;
+}
   
 
   #about-us .about-portrait img {
