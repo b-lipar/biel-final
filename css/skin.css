@@ -4418,7 +4418,7 @@ h3.card-title.h5 {
     height: auto;
     min-height: auto;
     width: 100%;
-    padding-top: 96px;
+    padding-top: 72px;
     overflow: hidden;
   }
 
@@ -4538,7 +4538,7 @@ h3.card-title.h5 {
 
   /* ABOUT */
   #about-us{
-    padding-top: 42px !important;
+    padding-top: 18px !important;
   }
 
   #about-us .site-wrapper{
@@ -4611,4 +4611,8 @@ h3.card-title.h5 {
     line-height: 1.5;
     margin-bottom: 16px;
   }
+}
+
+#about-us .slide-text{
+    display: none;
 }
