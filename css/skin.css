@@ -2652,7 +2652,7 @@ h3.card-title.h5 {
 
 #about-us .site-col.col-6:first-child .site-content{
   position: relative;
-  padding-top: 20px; /* pushes About + heading below image */
+  padding-top: 260px; /* pushes About + heading below image */
 }
 
 /* White card container */
@@ -4303,43 +4303,14 @@ h3.card-title.h5 {
   aside.sticky-nav li img {
     margin: 0 auto 6px;
   }
-  
-      .lang-switch{
-    left: 193px;
-    top: 15px;
-    width: auto;
-    text-align: left;
-  }
-
-  .lang-btn{
-    font-size: 20px;
-    padding: 6px 10px;
-  }
 
   /* ABOUT: center portrait and avoid awkward cropping */
-	#about-us {
-	  padding-top: 12px;
-	  padding-bottom: 40px;
-	}
-
-	#about-us .slide-text h2.text-slider {
-	  margin-top: 0;
-	  margin-bottom: 8px;
-	  font-size: 42px;
-	  line-height: 1;
-	}
-
-	#about-us .about-portrait {
-	  width: 180px;
-	  margin: 4px 0 -8px auto;
-	  padding: 0;
-	  transform: translateX(-6px);
-	}
-	
-	#about-us .section-title {
-  margin-top: 0;
-}
-  
+  #about-us .about-portrait {
+    width: 220px;
+    margin: 18px 0 14px auto; /* lower + align right */
+    padding: 0;
+    transform: translateX(10px);
+  }
 
   #about-us .about-portrait img {
     -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 80%, rgba(0,0,0,0) 100%);
