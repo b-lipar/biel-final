@@ -4353,3 +4353,262 @@ h3.card-title.h5 {
     margin-left: -38px !important;
   }
 }
+
+
+@media (max-width: 600px) {
+
+  /* HEADER */
+  .main-header{
+    padding: 14px 14px;
+  }
+
+  header.site-header .main-header .d-flex{
+    align-items: center !important;
+  }
+
+  a.site-logo img,
+  header.site-header a.site-logo img{
+    height: 34px;
+    width: auto;
+  }
+
+  .hdr-btn{
+    margin-left: auto;
+    margin-right: 14px;
+  }
+
+  .hdr-btn .site-btn{
+    padding: 12px 18px;
+    font-size: 13px;
+  }
+
+  .site-toggle{
+    width: auto;
+  }
+
+  .site-toggle span{
+    width: 22px;
+    height: 9px;
+  }
+
+  /* LANGUAGE BUTTON */
+  .lang-switch{
+    position: absolute;
+    top: 16px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: auto;
+    text-align: center;
+    z-index: 10000;
+  }
+
+  .lang-btn{
+    padding: 8px 12px;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1;
+    border: 1px solid #d9d9d9;
+    border-radius: 10px;
+    background: #fff;
+    color: #333;
+  }
+
+  /* HERO */
+  #slideshow{
+    height: auto;
+    min-height: auto;
+    width: 100%;
+    padding-top: 96px;
+    overflow: hidden;
+  }
+
+  .hero-content{
+    position: relative;
+    top: auto;
+    left: auto;
+    transform: none;
+    width: 100%;
+    max-width: 100%;
+    padding: 0 16px;
+  }
+
+  .hero-content p.sub-heading,
+  .sub-heading{
+    font-size: 28px;
+    line-height: 1;
+    margin-bottom: 12px;
+  }
+
+  .hero-content h2{
+    font-size: 28px;
+    line-height: 1.08;
+    letter-spacing: -0.6px;
+    margin-bottom: 20px;
+  }
+
+  .hero-slider .hero-content .anchor-div{
+    margin-top: 12px;
+  }
+
+  .link-btn{
+    font-size: 14px;
+  }
+
+  .hero-images{
+    position: relative;
+    right: auto;
+    bottom: auto;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 18px 0 4px;
+    margin: 0;
+    overflow: visible;
+  }
+
+  .hero-images .fist-image,
+  .hero-images .sec-image,
+  .hero-images .third-image{
+    position: relative !important;
+    right: auto !important;
+    bottom: auto !important;
+    top: auto !important;
+    opacity: 1 !important;
+    transform: none !important;
+    margin: 0 !important;
+  }
+
+  .hero-images img,
+  .hero-images .third-image{
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    object-fit: cover;
+    flex: 0 0 auto;
+  }
+
+  .hero-images .sec-image{
+    margin-left: -26px !important;
+  }
+
+  .hero-images .third-image{
+    display: none !important;
+  }
+
+  aside.sticky-nav{
+    position: relative;
+    left: 0;
+    top: auto;
+    transform: none;
+    width: 100%;
+    margin-top: 10px;
+    box-shadow: none;
+    opacity: 1;
+  }
+
+  aside.sticky-nav ul{
+    display: flex;
+    width: 100%;
+    margin: 0;
+  }
+
+  aside.sticky-nav li{
+    flex: 1 1 0;
+    border-bottom: none;
+    border-right: 1px solid #E8E8E8;
+  }
+
+  aside.sticky-nav li:last-child{
+    border-right: none;
+  }
+
+  aside.sticky-nav li a{
+    padding: 10px 4px;
+    font-size: 11px;
+    line-height: 1.1;
+  }
+
+  aside.sticky-nav li img{
+    margin: 0 auto 5px;
+    width: 18px;
+    height: 18px;
+  }
+
+  /* ABOUT */
+  #about-us{
+    padding-top: 42px !important;
+  }
+
+  #about-us .site-wrapper{
+    padding: 0 16px;
+  }
+
+  #about-us .site-row{
+    margin: 0;
+  }
+
+  #about-us .site-col.col-6{
+    width: 100%;
+    padding: 0;
+  }
+
+  #about-us .site-content{
+    padding: 0;
+    margin-top: 0;
+  }
+
+  #about-us .about-portrait{
+    width: 200px;
+    margin: 0 0 12px auto;
+    transform: none;
+  }
+
+  #about-us .about-portrait img{
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  #about-us h2{
+    font-size: 28px;
+    line-height: 1.14;
+    letter-spacing: -0.6px;
+    margin-bottom: 18px;
+  }
+
+  #about-us .triple-word{
+    margin-right: 0.15em;
+    padding-bottom: 10px;
+  }
+
+  #about-us .site-stats{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-top: 16px;
+    margin-bottom: 24px;
+  }
+
+  #about-us .site-stats p{
+    min-width: 0;
+    margin: 0;
+    text-align: center;
+    font-size: 11px;
+    line-height: 1.15;
+  }
+
+  #about-us .site-stats p span.stat-date{
+    display: block;
+    font-size: 28px;
+    line-height: 1;
+    margin: 4px 0;
+  }
+
+  #about-us p.text-justify{
+    font-size: 15px;
+    line-height: 1.5;
+    margin-bottom: 16px;
+  }
+}
