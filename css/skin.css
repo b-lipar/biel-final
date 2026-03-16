@@ -4625,3 +4625,9 @@ h3.card-title.h5 {
 }
 
 }
+
+@media (max-width: 600px) {
+  #slideshow {
+    height: 70vh;
+  }
+}
