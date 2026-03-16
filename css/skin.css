@@ -4617,17 +4617,3 @@ h3.card-title.h5 {
     display: none;
 }
 
-@media (max-width: 768px) {
-
-.hero-content{
-    top: 110px;        /* adjust this value */
-    transform: none;   /* remove vertical centering */
-}
-
-}
-
-@media (max-width: 600px) {
-  #slideshow {
-    height: 70vh;
-  }
-}
